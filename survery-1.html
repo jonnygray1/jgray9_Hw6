@@ -18,13 +18,22 @@
 		<label for="email">Email:</label>
 		<input type="email" id="email" name="email" required><br><br>
 
-    <label for="gender">Gender:</label>
-		<select id="gender" name="gender">
-			<option value="">Select Gender</option>
-			<option value="male">Male</option>
-			<option value="female">Female</option>
-			<option value="other">Other</option>
-		</select><br><br>
+    <body>
+      <h2>Gender Form</h2>
+      <p>Please select your gender.</p>
+      <form action="submit-form.php" method="POST">
+        <label for="gender-male">Male:</label>
+        <input type="checkbox" id="gender-male" name="gender[]" value="male"><br><br>
+        
+        <label for="gender-female">Female:</label>
+        <input type="checkbox" id="gender-female" name="gender[]" value="female"><br><br>
+        
+        <label for="gender-other">Other:</label>
+        <input type="checkbox" id="gender-other" name="gender[]" value="other"><br><br>
+        
+        
+      </form>
+    </body>
 		
 		<p>Please select your country or region of origin.</p>
 	<form action="submit-form.php" method="POST">
